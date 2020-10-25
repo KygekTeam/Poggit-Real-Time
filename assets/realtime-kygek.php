@@ -1,9 +1,5 @@
 <?php
 
-/*function get_json($json) {
-    return json_decode(file_get_contents($json));
-}*/
-
 $json = [];
 array_push(
     $json,
