@@ -39,6 +39,11 @@ function getKygekDownloads(){
             $downloads += $jsoncc["downloads"];
         }
     }
+    
+    // KygekRulesUI version 1.1.0 downloads
+    // Should be added because it's Kygekraqmak's plugin and the version is currently unavailable
+    $downloads += 957;
+    
     return $downloads;
 }
 ?>
