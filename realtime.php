@@ -2,7 +2,6 @@
     <head>
         <meta charset="utf-8">
         <title>Real Time Downloads</title>
-        <link rel="stylesheet" href="./css/main.css?v=<? echo time(); ?>">
         <script language="javascript">
             setTimeout(function() {
                 location.reload();
@@ -10,7 +9,6 @@
         </script>
     </head>
     <body class="body">
-        <?php include "./assets/header.php"; ?>
         <div class="text">
             <div class="main" style="text-align: center;">
                 <br>
@@ -27,6 +25,5 @@
                 <br>
             </div>
         </div>
-        <?php include "./assets/footer.php"; ?>
     </body>
 </html>
