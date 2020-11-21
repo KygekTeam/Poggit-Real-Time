@@ -6,6 +6,7 @@
             function sleep(ms) {
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
+            
             async function reloadScrip() {
                 var s = document.createElement('script');
                 s.type = 'text/javascript';
@@ -37,7 +38,7 @@
                 <h1 id="kygekraqmak" style="font-size: 72px;"></h1>
                 <h3>Download our plugins <a href="https://poggit.pmmp.io/plugins/by/Kygekraqmak">here</a> and see the counter goes up!</h3>
                 <hr />
-                <h4 style="text-align: left;">This page automatically refreshes every 5 seconds.</h4>
+                <h4 style="text-align: left;">This page automatically refreshes every 5 seconds for the first 30 minutes.</h4>
                 <h4 style="text-align: left;">If you have any feedbacks or you want to contribute to make this site better, contact KygekDev#6415 on Discord.</h4>
                 <hr />
                 <h4 style="text-align: left;"><a href="https://github.com/Kygekraqmak/Poggit-Real-Time/tree/refresh-h1">Source Code</a></h4>
