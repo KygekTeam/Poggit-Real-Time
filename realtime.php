@@ -17,11 +17,11 @@
             
             let timerId = setInterval(function() {
                 reloadScrip();
-            }, 1000);
+            }, 5000);
 
             setTimeout(function() {
                 clearInterval(timerId);
-            }, 30000);
+            }, 1800000);
         }</script>
     </head>
     <body class="body" id="body">
