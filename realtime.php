@@ -15,13 +15,13 @@
                 target[1].parentElement.removeChild(target[1]);
             }
             
-            let timerId = setInterval(function() => {
-                reloadScrip()
-            }, 5000);
+            let timerId = setInterval(function() {
+                reloadScrip();
+            }, 1000);
 
-            setTimeout(function() => {
-                clearInterval(timerId)
-            }, 1800000);
+            setTimeout(function() {
+                clearInterval(timerId);
+            }, 30000);
         }</script>
     </head>
     <body class="body" id="body">
