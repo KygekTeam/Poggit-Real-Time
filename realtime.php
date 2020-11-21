@@ -13,10 +13,15 @@
                 document.getElementById('body').append(s);
                 var target = document.getElementsByTagName('script');
                 target[1].parentElement.removeChild(target[1]);
-                await sleep(5000);
-                reloadScrip();
             }
-            reloadScrip();
+            
+            let timerId = setInterval(function() => {
+                reloadScrip()
+            }, 5000);
+
+            setTimeout(function() => {
+                clearInterval(timerId)
+            }, 1800000);
         }</script>
     </head>
     <body class="body" id="body">
