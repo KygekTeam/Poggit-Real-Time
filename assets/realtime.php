@@ -29,6 +29,7 @@ function getKygekDownloads(){
         get_json('https://poggit.pmmp.io/releases.json?name=KygekPingTPS&fields=downloads'),
         get_json('https://poggit.pmmp.io/releases.json?name=KygekWhitelistKick&fields=downloads'),
         get_json('https://poggit.pmmp.io/releases.json?name=KygekTagsShop&fields=downloads'),
+        get_json('https://poggit.pmmp.io/releases.json?name=KygekEatHeal&fields=downloads'),
         get_json('https://poggit.pmmp.io/releases.json?name=PerWorldPlayersList&fields=downloads')
     );
     
