@@ -39,7 +39,7 @@
                 <h3>Download our plugins <a href="https://poggit.pmmp.io/plugins/by/KygekTeam">here</a> and see the counter goes up!</h3>
                 <hr />
                 <h4 style="text-align: left;">This page automatically refreshes every 5 seconds for the first 30 minutes.</h4>
-                <h4 style="text-align: left;">If you have any feedbacks or you want to contribute to make this site better, contact KygekDev#6415 on Discord.</h4>
+                <h4 style="text-align: left;">If you have any feedbacks or you want to contribute to make this site better, join our <a href="https://discord.gg/CXtqUZv">Discord server</a>.</h4>
                 <hr />
                 <h4 style="text-align: left;"><a href="https://github.com/KygekTeam/Poggit-Real-Time/tree/refresh-h1">Source Code</a></h4>
                 <br>
