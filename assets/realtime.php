@@ -20,26 +20,25 @@ function getAllDownloads(){
     return $downloads;
 }
 function getKygekDownloads(){
-    $json = [];
-    array_push(
-        $json,
-        get_json('https://poggit.pmmp.io/releases.json?name=KygekJoinUI&fields=downloads'),
-        get_json('https://poggit.pmmp.io/releases.json?name=KygekRulesUI&fields=downloads'),
-        get_json('https://poggit.pmmp.io/releases.json?name=KygekRanksUI&fields=downloads'),
-        get_json('https://poggit.pmmp.io/releases.json?name=KygekPingTPS&fields=downloads'),
-        get_json('https://poggit.pmmp.io/releases.json?name=KygekWhitelistKick&fields=downloads'),
-        get_json('https://poggit.pmmp.io/releases.json?name=KygekTagsShop&fields=downloads'),
-        get_json('https://poggit.pmmp.io/releases.json?name=KygekEatHeal&fields=downloads'),
-        get_json('https://poggit.pmmp.io/releases.json?name=PerWorldPlayersList&fields=downloads')
-    );
-    
+    $json = json_decode(file_get_contents("https://poggit.pmmp.io/plugins.json?fields=downloads,name"), true);
+
+    $json = array_filter($json, function ($var) : bool {
+        return in_array($var["name"], [
+            "KygekJoinUI",
+            "KygekRulesUI",
+            "KygekRanksUI",
+            "KygekPingTPS",
+            "KygekWhitelistKick",
+            "KygekTagsShop",
+            "KygekEatHeal",
+            "PerWorldPlayersList"
+        ]);
+    });
+
     $downloads = 0;
     
     foreach ($json as $jsonc) {
-        foreach ($jsonc as $jsoncc) {
-            $jsoncc = (array) $jsoncc;
-            $downloads += $jsoncc["downloads"];
-        }
+        $downloads += $jsonc["downloads"];
     }
     
     // KygekRulesUI version 1.1.0 downloads
