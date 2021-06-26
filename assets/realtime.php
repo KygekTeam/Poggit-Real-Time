@@ -31,6 +31,7 @@ function getKygekDownloads(){
             "KygekWhitelistKick",
             "KygekTagsShop",
             "KygekEatHeal",
+            "KygekFarmlandDecay",
             "PerWorldPlayersList"
         ]);
     });
