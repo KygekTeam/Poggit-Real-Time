@@ -13,6 +13,7 @@ function getDownloads(bool $kygekteam = false){
             "KygekTagsShop",
             "KygekEatHeal",
             "KygekFarmlandDecay",
+            "KygekLastPosition",
             "PerWorldPlayersList"
         ])) return false;
 
