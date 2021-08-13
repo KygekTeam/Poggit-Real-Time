@@ -1,7 +1,7 @@
 <?php
 
 function getDownloads(bool $kygekteam = false){
-    $json = json_decode(file_get_contents("https://poggit.pmmp.io/plugins.json?fields=downloads,name"), true);
+    $json = json_decode(file_get_contents("https://poggit.pmmp.io/plugins.min.json?fields=downloads,name"), true);
 
     $json = array_filter($json, function ($var) use ($kygekteam) : bool {
         if ($kygekteam && !in_array($var["name"], [
