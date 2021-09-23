@@ -17,15 +17,7 @@ function getDownloads(bool $kygekteam = false){
             "PerWorldPlayersList"
         ])) return false;
 
-        static $downloads = 0;
-        static $name = "";
-        if ($var["downloads"] !== $downloads || $var["name"] !== $name) {
-            $downloads = $var["downloads"];
-            $name = $var["name"];
-            return true;
-        }
-
-        return false;
+        return true;
     });
 
     $downloads = 0;
