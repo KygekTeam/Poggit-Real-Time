@@ -11,7 +11,7 @@ function getDownloads(bool $kygekteam = false){
     $json = json_decode(file_get_contents("https://poggit.pmmp.io/plugins.min.json?fields=downloads,name,id"), true);
     restore_error_handler();
 
-    if ($poggitIsDown) return "Poggit is Down!";
+    if ($poggitIsDown || !is_array($json)) return "Poggit is Down!";
 
     $json = array_filter($json, function ($var) use ($kygekteam) : bool {
         if ($kygekteam && !in_array($var["name"], [
