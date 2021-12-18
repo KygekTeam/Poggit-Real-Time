@@ -2,4 +2,4 @@
 
 Real time Poggit downloads script
 
-Site: https://kygekteam.org/realtime
+Site: https://kygek.team/realtime
