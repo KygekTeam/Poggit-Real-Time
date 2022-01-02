@@ -1,5 +1,5 @@
-# Poggit-Real-Time
+# Poggit Real Time Downloads
 
-Real time Poggit downloads script
+Source code of KygekTeam's real time Poggit downloads count of all plugins and KygekTeam plugins
 
-Site: https://kygek.team/realtime
+**Site:** https://kygek.team/realtime
